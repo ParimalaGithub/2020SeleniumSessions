@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="HubSpot App Regression Test Suite" thread-count="2" parallel="tests" >
+
+  <test name="login Test" verbose="5" thread-count="2">
+  <parameter name="url" value="https://app.hubspot.com/login"/>
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="username" value="testqa774@gmail.com"/>
+  <parameter name="password" value="Test123456$"/>
+    
+    <classes>
+       <class name="com.tests.LoginTest"/>
+       <methods>
+       <exclude name = "tearDown"/>
+       </methods>
+    </classes>
+    </test>
+    
+    <test name="sign up test" verbose="2">
+    	<parameter name="url" value="https://app.hubspot.com/signup/crm/step/user-info"/>
+    	<parameter name="browserName" value="firefox"/>
+     <classes>
+        <class name="com.tests.SignUpTest"/>
+        </classes>
+    
+  </test>
+ 
+</suite>
+        

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="NV TestNG Session Suite"  >
+  <test name="My testng practice test" verbose="5">
+  
+    <classes>
+       <class name="TestNGSessions.DependsonMethods" />
+       <class name="TestNgSessions.ExpectedExceptionTest" />
+       <class name="TestNgSessions.InvocationCount" />
+       <class name="TestNgSessions.LoginTest" />
+       <class name="TestNgSessions.PriorityTest" />
+    </classes>
+  </test>
+ 
+</suite>
